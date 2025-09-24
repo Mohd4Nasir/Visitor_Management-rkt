@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@plugin "daisyui";
+/* Global styles */
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px; /* scrollbar width */
+  height: 10px; /* horizontal scrollbar height */
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* track background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3b82f6, #2563eb); /* blue gradient */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #4FB7B3, #4FB7B3); /* darker on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #4FB7B3 #f1f1f1; /* thumb color | track color */
+}
+
+
